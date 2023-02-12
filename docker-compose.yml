@@ -1,0 +1,20 @@
+version: '3'
+services:
+  ddd-core-php-cli:
+    build:
+      context: ./docker/php-cli
+      dockerfile: Dockerfile
+      args:
+      - HOST_USER_UID=${HOST_USER_UID}
+      - HOST_USER_GID=${HOST_USER_GID}
+    ports:
+      - '${PHP_CLI_XDEBUG_HOST_PORT}:9003'
+    volumes:
+      - .:/app
+      - composer:/tmp/composer-cache
+    environment:
+      PHP_IDE_CONFIG: 'serverName=lw-ddd-core.docker'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+volumes:
+  composer:

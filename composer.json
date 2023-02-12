@@ -1,0 +1,33 @@
+{
+    "name": "sibers/crk-ddd-core",
+    "description": "DDD core library for CRK projects",
+    "license": "proprietary",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nikolay Ryabkov",
+            "email": "nikolay.ryabkov@sibers.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lw\\": "src/Lw/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lw\\DddCore\\Tests\\": "tests/Lw/DddCore/",
+            "Spy\\Tests\\": "tests/Spy/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
