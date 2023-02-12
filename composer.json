@@ -1,6 +1,6 @@
 {
-    "name": "sibers/crk-ddd-core",
-    "description": "DDD core library for CRK projects",
+    "name": "sibers/lw-ddd-core",
+    "description": "DDD core library for Last Wishes projects",
     "license": "proprietary",
     "type": "library",
     "authors": [
