@@ -15,8 +15,18 @@ The set includes:
 
 ## Installation as a project dependency
 
-The preferred way to install this library is through [Composer](http://getcomposer.org/):
+The preferred way to install this library is through [Composer](http://getcomposer.org/).
 
+First, add the private VCS repository to your project's composer.json:
+```
+"repositories": [
+  {
+    "type": "vcs",
+    "url": "git@github.com:ZeroGravity-82/lw-ddd-core.git"
+  }
+],
+```
+Then install the library with Composer:
 ```
 composer require sibers/lw-ddd-core:^1.0
 ```
